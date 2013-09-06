@@ -1,0 +1,10 @@
+<%= render 'shared/error_messages', object: f.object %>
+<p>
+	<h3><%= f.label :title%></h3>
+	<%= f.text_field :title %>
+</p>
+
+<p>
+	<h3><%= f.label :content %></h3>
+	<%= f.text_area :content, placeholder: "Compose new post..." %>
+</p>

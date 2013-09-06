@@ -1,0 +1,11 @@
+<% provide(:title, "New Post")%>
+<div class="post-content">
+	<h3>New Post</h3>
+	<p></p>
+	<%= form_for (@post) do |f| %>
+	<%= render 'post', f: f%>
+	<p>
+		<%= f.submit "Post!" %>
+	</p>
+	<% end %>
+</div>

@@ -1,0 +1,37 @@
+<div id="post">
+	<div class="post-header">
+		<div class="post-color">
+			<div class="title-texture">
+				<h2 class="bebas">
+					<%= link_to post.title, post_path(post) %>
+				</h2>
+			</div>
+			<div class="cap-post">
+				<%= link_to "Text", post_path(post) %>
+			</div>
+			<div class="clear">
+				
+			</div>
+		</div>
+		<div class="post-spacer">
+			
+		</div>
+	</div>
+	<div class="clear">
+		
+	</div>
+	<div class="post-info bebas">
+		<div class="parts">
+			<%= time_ago_in_words post.created_at %> ago
+		</div>
+		<div class="clear">
+			
+		</div>
+	</div>
+	<div class="post-content">
+		<p>
+			<%= post.content %>
+		</p>
+		<p></p>
+	</div>
+</div>

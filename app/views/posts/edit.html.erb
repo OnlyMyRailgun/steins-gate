@@ -1,0 +1,10 @@
+<% provide(:title, "Edit Post") %>
+<div class="post-content">
+	<h3>Edit Post</h3>
+	<p></p>
+	<%= form_for(@post) do |f| %>
+	<%= render 'fields', f: f %>
+
+	<%= f.submit "Save changes" %>
+	<% end %>
+</div>
